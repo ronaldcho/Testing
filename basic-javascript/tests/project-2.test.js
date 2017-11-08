@@ -51,6 +51,17 @@ describe('Project-2 Functions', () => {
       assert.equal(isInRange(10), false);
     });
   });
+
+  describe('isInteger', () => {
+    it('should return true', () => {
+      const isInteger = funcs.isInteger;
+      assert.equal(isInteger(1), true);
+    });
+    it('should return false', () => {
+      const isInteger = funcs.isInteger;
+      assert.equal(isInteger(1.2), false);
+    });
+  });
   
 });
 
